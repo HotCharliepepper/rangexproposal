@@ -1,0 +1,9 @@
+# RangeX 성과제안서 · Netlify 설정 (정적 사이트)
+[build]
+  publish = "."
+
+# 이미지 캐시 (선택)
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
